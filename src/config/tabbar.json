@@ -1,0 +1,23 @@
+[
+  {
+    "title" : "首页" ,
+    "path" : "/home" ,
+    "icon" : "home-o" ,
+    "replace" : false
+  } , {
+  "title" : "了解" ,
+  "path" : "/about" ,
+  "icon" : "search" ,
+  "replace" : false
+} , {
+  "title" : "知道" ,
+  "path" : "/about" ,
+  "icon" : "search" ,
+  "replace" : false
+} , {
+  "title" : "搜索" ,
+  "path" : "/about" ,
+  "icon" : "search" ,
+  "replace" : false
+}
+]
