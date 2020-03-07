@@ -1,16 +1,27 @@
 <template>
     <div class="home">
         <h1>this is home</h1>
-        <van-button type="default">默认按钮</van-button>
+        <van-button type="default" @click="buttonClick">{{ language.name }}</van-button>
     </div>
 </template>
 
 <script>
-    // @ is an alias to /src
+    import setLanguage from '@/function/setLanguage'
 
     export default {
+        mixins : [ require ( "@/mixin/mymixins" ).default ] ,
         name : 'home' ,
-        components : {
+        data () {
+            return {};
+        } ,
+        components : {} ,
+        watch : {} ,
+        methods : {
+            buttonClick () {
+                // setLanguage ( "en-US" )
+                // this.eleNotify ( "test" , 0 , 0 );
+                this.setOtherInfo ( { setPopupShow : true } );
+            }
         }
     }
 </script>

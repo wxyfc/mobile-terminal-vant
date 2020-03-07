@@ -1,21 +1,11 @@
 [
   {
-    "title" : "首页" ,
+    "title" : "home" ,
     "path" : "/home" ,
     "icon" : "home-o" ,
     "replace" : false
   } , {
-  "title" : "了解" ,
-  "path" : "/about" ,
-  "icon" : "search" ,
-  "replace" : false
-} , {
-  "title" : "知道" ,
-  "path" : "/about" ,
-  "icon" : "search" ,
-  "replace" : false
-} , {
-  "title" : "搜索" ,
+  "title" : "about" ,
   "path" : "/about" ,
   "icon" : "search" ,
   "replace" : false

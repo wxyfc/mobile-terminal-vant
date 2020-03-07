@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import MainTabbar from '@/views/framework/MainTabbar';
 
 Vue.use ( VueRouter )
-MainTabbar
 const routes = [
     {
         path : '/' ,

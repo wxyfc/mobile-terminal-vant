@@ -1,11 +1,12 @@
 <template>
     <div>
         <router-view/>
+        <SetPopup/>
         <div v-if="tabbarList.length>=1" class="tabbar-handler-bottom">
-            <van-tabbar route z-index="9999">
+            <van-tabbar route>
                 <van-tabbar-item v-for="item in tabbarList" :replace="item.replace" :key="item.path"
                                  :to="item.path" :icon="item.icon" :dot="item.dot" :info="item.info">
-                    {{ item.title }}
+                    {{ language[item.title]||item.title }}
                 </van-tabbar-item>
             </van-tabbar>
         </div>
@@ -16,8 +17,11 @@
     import Vue from 'vue'
 
     export default {
-        // mixins : [ require ( "@/mixin/mymixins" ).default ] ,
+        mixins : [ require ( "@/mixin/mymixins" ).default ] ,
         name : "MainTabbar" ,
+        components : {
+            SetPopup : () => import('./SetPopup')
+        } ,
         data () {
             return {
                 tabbarList : []

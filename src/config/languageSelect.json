@@ -1,0 +1,9 @@
+[
+  {
+    "name" : "中文" ,
+    "subname" : "zh-CN"
+  } , {
+  "name" : "英文" ,
+  "subname" : "en-US"
+}
+]

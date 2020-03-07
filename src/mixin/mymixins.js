@@ -67,10 +67,7 @@ let m = {
                 value : v
             } );
         } ,
-        lastUserInfo ( v ) {
-            if ( v == undefined ) {
-                v = {};
-            }
+        lastUserInfo ( v = {} ) {
             //设置用户的信息
             this.$store.dispatch ( "upVuex" , {
                 mutations : "lastUserInfo" ,
@@ -126,19 +123,16 @@ let m = {
                 this.eleNotify ( res.ErrMsg || res.message || res.Message , i );
             }
         } ,
-        eleNotify ( t , i ) {
+        eleNotify ( t , i = 0 , duration = 3000 ) {
             //message
             //notify
-            if ( !this.$isTrue ( i ) ) {
-                i = 200;
-            }
-            let ml = [ "info" , "success" , "warning" , "error" ]
-            this.$message ( {
+            let ml = [ "primary" , "success" , "warning" , "danger" ]
+            this.$notify ( {
                 message : t ,
                 type : ml[ i ] ,
-                duration : 3000 ,
-                offset : 100 ,
-                customClass : "messageBox"
+                duration ,
+                // offset : 100 ,
+                // customClass : "messageBox"
             } );
         } ,
         ifServerCode ( i ) {

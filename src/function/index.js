@@ -1,5 +1,3 @@
-import Vue from "vue";
-
 export function getNumberOfDays ( date1 , date2 ) {//获得天数
     //date1：开始日期，date2结束日期  时间戳相减，然后除以天数
     return Math.ceil ( ( Date.parse ( new Date ( date2 ) ) - Date.parse ( new Date ( date1 ) ) ) / ( 1000 * 60 * 60 * 24 ) )
@@ -166,6 +164,7 @@ export function $ColorReverse ( o ) {
     let str = "000000" + ( 0xffffff - o ).toString ( 16 );
     return "#" + str.substring ( str.length - 6 , str.length );
 }
+
 //
 // export function $dataFormat ( data ) {
 //     let colors = require ( "@/web-config/color.js" );
@@ -355,10 +354,7 @@ export function setLocal ( key , val ) {
 }
 
 /*获取localStorage*/
-export function getLocal ( key , value ) {
-    if ( value == undefined ) {
-        value = {}
-    }
+export function getLocal ( key , value = {} ) {
     let ls = window.localStorage;
     try {
         let data = JSON.parse ( ls.getItem ( "allLoacl" ) );

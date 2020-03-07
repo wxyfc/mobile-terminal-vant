@@ -5,10 +5,13 @@ import store from './store'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 import "./less/index.less"
+import "./prototype"
+import "./interceptor"
 import { fetchPost , fetchGet } from './http/http';
 
 Vue.prototype.$Post = fetchPost;
 Vue.prototype.$Get = fetchGet;
+Vue.prototype.$language = null;
 
 Vue.config.productionTip = false
 Vue.use ( Vant );

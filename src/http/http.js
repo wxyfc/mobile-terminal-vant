@@ -3,6 +3,7 @@ import axios from 'axios'
 // import 'nprogress/nprogress.css';
 import store from '@/store';
 import { formData } from '@/function'
+import { Notify , Toast } from 'vant';
 
 axios.defaults.timeout = 20000;                        //响应时间
 axios.defaults.headers.post[ 'Content-Type' ] = 'application/x-www-form-urlencoded;charset=UTF-8';        //配置请求头
@@ -37,12 +38,19 @@ axios.interceptors.response.use ( ( res ) => {
 } );
 
 function mes () {
-    ELEMENT.Message ( {
+    // Notify ( {
+    //     message : store.state.language.serveError ,
+    //     type : "danger" ,
+    //     duration : 3000 ,
+    //     // customClass : "messageBox"
+    // } );
+    Toast ( {
         message : store.state.language.serveError ,
-        type : "error" ,
-        duration : 3000 ,
-        customClass : "messageBox"
-    } );
+        icon : "cross" ,
+        overlay : true ,
+        forbidClick : true ,
+        duration : 0
+    } )
 }
 
 //返回一个Promise(发送post请求)
