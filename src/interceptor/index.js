@@ -1,1 +1,2 @@
 import "./language"
+import "./details"

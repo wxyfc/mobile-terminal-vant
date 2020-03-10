@@ -4,7 +4,7 @@
         <span v-else-if="option.leftType==='text'" slot="left" @click="$clickLeft">{{ option.leftContent }}</span>
         <span v-if="option.centreType==='text'" slot="title" @click="$clickCenter">{{ option.centreContent }}</span>
         <van-search v-else-if="option.centreType==='search'" slot="title" v-model="searchContent" :placeholder="option.centreContent" @search="$searchChange"></van-search>
-        <van-icon v-if="option.rightType==='icon'" :name="option.leftContent" slot="right" @click="$clickRight"></van-icon>
+        <van-icon v-if="option.rightType==='icon'" :name="option.rightContent" slot="right" @click="$clickRight"></van-icon>
         <span v-else-if="option.rightType==='text'" slot="right" @click="$clickRight">{{ option.rightContent }}</span>
     </van-nav-bar>
 </template>

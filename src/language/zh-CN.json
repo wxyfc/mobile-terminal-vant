@@ -1,4 +1,9 @@
 {
+  "searchPageDefault" : "在此输入想搜索的" ,
+  "my" : "我的" ,
+  "shoppingCart" : "购物车" ,
+  "searchPage" : "搜索页" ,
+  "homePage" : "首页" ,
   "cancel" : "取消" ,
   "currentLanguage" : "当前语言" ,
   "languageActionSheetTitle" : "请选择语言" ,

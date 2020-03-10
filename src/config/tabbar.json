@@ -1,13 +1,23 @@
 [
   {
-    "title" : "home" ,
-    "path" : "/home" ,
+    "title" : "homePage" ,
+    "path" : "/homePage" ,
     "icon" : "home-o" ,
     "replace" : false
   } , {
-  "title" : "about" ,
-  "path" : "/about" ,
+  "title" : "searchPage" ,
+  "path" : "/searchPage" ,
   "icon" : "search" ,
+  "replace" : false
+} , {
+  "title" : "shoppingCart" ,
+  "path" : "/shoppingCart" ,
+  "icon" : "cart-o" ,
+  "replace" : false
+} , {
+  "title" : "my" ,
+  "path" : "/my" ,
+  "icon" : "contact" ,
   "replace" : false
 }
 ]

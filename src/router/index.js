@@ -6,26 +6,34 @@ Vue.use ( VueRouter )
 const routes = [
     {
         path : '/' ,
-        redirect : { name : "home" } ,
+        redirect : { name : "homePage" } ,
     } , {
         path : '/MainTabbar' ,
         name : 'MainTabbar' ,
         component : MainTabbar ,
         children : [
             {
-                path : '/home' ,
-                name : 'home' ,
-                component : () => import('@/views/framework/Home')
+                path : '/homePage' ,
+                name : 'homePage' ,
+                component : () => import('@/views/business/mainpage/homepage/HomePage')
             } , {
-                path : '/about' ,
-                name : 'about' ,
-                component : () => import('@/views/business/About')
+                path : '/searchPage' ,
+                name : 'searchPage' ,
+                component : () => import('@/views/business/mainpage/searchpage/SearchPage')
+            } , {
+                path : '/shoppingCart' ,
+                name : 'shoppingCart' ,
+                component : () => import('@/views/business/mainpage/shoppingcart/ShoppingCart')
+            } , {
+                path : '/my' ,
+                name : 'my' ,
+                component : () => import('@/views/business/mainpage/my/My')
             }
         ]
-    } , {
-        path : '/home2' ,
-        name : 'home2' ,
-        component : () => import('@/views/framework/Home')
+        // } , {
+        //     path : '/home2' ,
+        //     name : 'home2' ,
+        //     component : () => import('@/views/framework/Home')
     }
 ]
 
