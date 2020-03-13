@@ -42,15 +42,19 @@
             return {
                 showTopNavBar : true ,
                 tabbarList : false ,
-                topNavBarOption : {
+            };
+        } ,
+        computed : {
+            topNavBarOption () {
+                return {
                     leftType : "icon" ,
                     leftContent : "" ,
                     centreType : "text" ,
-                    centreContent : "首页" ,
+                    centreContent : this.language[ this.$route.name ] ,
                     rightType : "icon" ,
                     rightContent : ""
-                }
-            };
+                };
+            }
         } ,
         created () {
             //修改tabbar.json数组可修改底部导航栏数目，数组为空则没有底部导航栏，已处理导航栏在底部重叠的问题。

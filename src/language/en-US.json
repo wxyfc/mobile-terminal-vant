@@ -1,4 +1,16 @@
 {
+  "colorSelect" : "colorSelect" ,
+  "currentThemeColor" : "currentThemeColor" ,
+  "searchPageDefault" : "searchPageDefault" ,
+  "my" : "my" ,
+  "shoppingCart" : "shoppingCart" ,
+  "searchPage" : "searchPage" ,
+  "homePage" : "homePage" ,
+  "cancel" : "cancel" ,
+  "currentLanguage" : "currentLanguage" ,
+  "languageSelect" : "languageSelect" ,
+  "home" : "home" ,
+  "about" : "about" ,
   "name" : "name" ,
   "serveError" : "serveError"
 }

@@ -1,0 +1,15 @@
+[
+  {
+    "name" : "主题红" ,
+    "subname" : "#F56C6C"
+  } , {
+  "name" : "主题蓝" ,
+  "subname" : "#409EFF"
+}, {
+  "name" : "主题绿" ,
+  "subname" : "#67C23A"
+}, {
+  "name" : "主题黄" ,
+  "subname" : "#E6A23C"
+}
+]

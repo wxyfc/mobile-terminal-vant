@@ -22,10 +22,10 @@
                 type : Array ,
                 default : () => {
                     return [
-                        'https://img.yzcdn.cn/vant/apple-1.jpg' ,
-                        'https://img.yzcdn.cn/vant/apple-2.jpg' ,
-                        'https://img.yzcdn.cn/vant/apple-3.jpg' ,
-                        'https://img.yzcdn.cn/vant/apple-4.jpg'
+                        'http://b-ssl.duitang.com/uploads/item/201806/20/20180620171603_JsPzu.jpeg' ,
+                        'http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1308/15/c5/24496183_1376533418350.jpg' ,
+                        'http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1211/27/c9/16142347_1354014176593.jpg' ,
+                        'http://pic.rmb.bdstatic.com/779dcfa065f5769681f721f83f25e885.jpeg'
                     ];
                 }
             }

@@ -3,6 +3,7 @@
         <HomeSwipe @swipe-change="swipeChange" @swipe-item-click="swipeItemClick"/>
         <h1>this is home点击顶部就会+1的数字{{ titleClick}}</h1>
         <van-button type="default" @click="buttonClick">{{ language.name }}</van-button>
+        1231321321321
     </div>
 </template>
 

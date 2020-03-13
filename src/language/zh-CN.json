@@ -1,4 +1,6 @@
 {
+  "colorSelect" : "请选择主题颜色" ,
+  "currentThemeColor" : "当前主题颜色" ,
   "searchPageDefault" : "在此输入想搜索的" ,
   "my" : "我的" ,
   "shoppingCart" : "购物车" ,
@@ -6,7 +8,7 @@
   "homePage" : "首页" ,
   "cancel" : "取消" ,
   "currentLanguage" : "当前语言" ,
-  "languageActionSheetTitle" : "请选择语言" ,
+  "languageSelect" : "请选择语言" ,
   "home" : "首页" ,
   "about" : "关于" ,
   "name" : "名字" ,

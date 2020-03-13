@@ -1,17 +1,49 @@
 @font-family-overall: 'Avenir', Helvetica, Arial, sans-serif;
-@color-theme: #2c3e50;
-@tabbar-margin-top: 50px;
-@bavbar-margin-bottom: 50px;
+@color-theme-title: #F5F7F9; //主题标题颜色
+@color-theme-disabled: #e1e3e4; //主题标题颜色
+//@color-theme: #F56C6C;
+@color-theme: #409EFF;
+//@color-theme: #67C23A;
+//@color-theme: #E6A23C; //主题颜色
+@tabbar-margin-top: 50px; //底部导航栏高度，需要通过外边距消除遮挡。
+@bavbar-margin-bottom: 46px; //顶部标题栏高度，需要通过外边距消除遮挡。
 @height-100n: 100%;
 @width-100n: 100%;
-@width-80n: 80%;
-@height-240px: 240px;
+@width-80n: 80%; //右出抽屉宽度
 #app {
   font-family: @font-family-overall;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  //text-align: center;
+}
+
+.van-nav-bar__title {
+  color: @color-theme-title;
+}
+
+.van-tabbar-item--active, .van-nav-bar .van-icon {
   color: @color-theme;
+}
+
+// .theme-search .van-search__content
+.van-swipe__indicator--active, .van-nav-bar, .theme-search, .van-tabbar-item__icon .van-info, .color-select-demo {
+  background-color: @color-theme;
+}
+
+.color-select-demo {
+  width: 24px;
+  height: 24px;
+  border: @color-theme-disabled solid 2px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.van-search__content {
+  border-radius: 16px;
+}
+
+.top-nav-bar-search {
+  padding: 5px 0 0 0;
 }
 
 .tabbar-handler-bottom {
@@ -23,7 +55,6 @@
 }
 
 .home-swipe-img {
-  height: @height-240px;
   width: @width-100n;
 }
 
